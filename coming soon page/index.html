@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="styling.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="background-image">
+    <header class="mobile-header container">
+      <img class="header__logo" src="../images/logo.svg" alt="base apparel logo">
+    </header>
+  
+    <div class="mobile-hero">
+      <img class="img" src="../images/hero-mobile.jpg" alt="young lady posing">
+    </div>
+  
+    <div class="d-flex">
+  
+      <main class="main">
+        <div class="container">
+  
+          <img class="header__logo desktop-header" src="../images/logo.svg" alt="base apparel logo">
+    
+          <div class="desktop-main">
+            <h1 class="title"><span class="span">we're</span><br>coming<br>soon</h1>
+            <p class="psa">Hello shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            
+            <form id="form" action="" method="GET" target="_blank">
+              <input type="email" name="email-adress" id="email" placeholder="Email Address" required>
+              <div class="error-icon-wrap" id="wrap"><img src="../images/icon-error.svg" alt="error message"></div>
+              <button onclick="validate ()"><img class="svg-arrow" src="../images/icon-arrow.svg" alt="submit button"></button>
+            </form>
+            <div id="alert"></div>
+          </div>
+  
+        </div>
+      </main>
+      <div class="desktop-hero"></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

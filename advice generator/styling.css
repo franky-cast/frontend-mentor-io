@@ -1,0 +1,132 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_light: hsl(193, 38%, 86%);
+    --primary: hsl(150, 100%, 66%);
+    --neutral_light: hsl(217, 19%, 38%);
+    --neutral: hsl(217, 19%, 24%);
+    --neutral_dark: hsl(218, 23%, 16%);
+    --manrope: 'Manrope', sans-serif;
+}
+
+.body {
+    margin: 0;
+    background-color: var(--neutral_dark);
+    padding-top: 7em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 90%;
+    background-color: var(--neutral);
+    color: var(--primary_light);
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--manrope);
+    border-radius: 15px;
+    padding: 1.5em;
+    padding-bottom: 0;
+    min-height: 350px;
+}
+
+.desktop-divider {
+    display: none;
+}
+
+.advice-id {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    padding-top: 1em;
+}
+
+.content {
+    min-height: 130px;
+}
+
+.advice {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.mobile-divider {
+    margin: 0 auto;
+}
+
+.btn-wrapper {
+    padding-top: 13%;
+}
+
+.btn {
+    padding-top: 1em;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+.dice-wrapper {
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.dice {
+    padding-top: 1.125em;
+}
+
+.attribution {
+    padding-top: 3em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    .body {
+        padding-top: 8.5em;
+    }
+
+    .container {
+        width: 62%;
+    }
+    .advice {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body {
+        padding-top: 10em;
+    }
+
+    .container {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mobile-divider {
+        display: none;
+    }
+
+    .desktop-divider {
+        display: inline;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

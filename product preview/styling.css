@@ -1,0 +1,158 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_dark: hsl(158, 36%, 37%);
+    --primary_cream: hsl(30, 38%, 92%);
+    --neutral_blue: hsl(212, 21%, 14%);
+    --neutral_gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+.mont-reg {
+    font-family: var(--montserrat);
+}
+
+.mont-bold {
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
+
+.fraun {
+    font-family: var(--fraunces);
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary_cream);
+    color: white;
+    padding-top: 2em;
+}
+
+.container {
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    width: 90%;
+}
+
+.desktop-hero {
+    display: none;
+}
+
+.hero__img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main {
+    color: black;
+    padding: 0.25em 1.5em 2em 1.5em;
+    font-size: 14px;
+}
+
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--neutral_gray);
+}
+
+.title {
+    font-size: 30px;
+    margin: 14px 0;
+}
+
+.paragraph {
+    margin: 8px 0;
+    color: var(--neutral_gray);
+}
+
+.price {
+    display: flex;
+    gap: 2em;
+}
+
+.discounted-price {
+    font-size: 32px;
+    color: var(--primary_dark);
+}
+
+.original-price {
+    align-self: center;
+}
+
+.btn-wrap {
+    background-color: var(--primary_dark);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.btn-wrap:hover {
+    opacity: 0.75;
+}
+
+.btn-wrap:focus {
+    opacity: 1;
+}
+
+.add-to-cart-btn {
+    text-decoration: none;
+    color: var(--white);
+    width: 100%;
+}
+
+/* .add-to-cart-btn:hover, .add-to-cart-btn:focus {
+    
+} */
+
+.cart-icon {
+    padding-right: 0.5em;
+}
+
+@media (min-width: 700px) {
+    .mobile-hero {
+        display: none;
+    }
+
+    .desktop-hero {
+        background-image: url(./images/image-product-desktop.jpg);
+        background-size: cover;
+        display: block;
+        width: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .hero__img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .main {
+        padding: 2.5em;
+        width: 50%;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    body {
+        padding: 8em;
+        display: flex;
+    }
+    
+}

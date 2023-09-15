@@ -1,0 +1,229 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.background-image {
+    background-image: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img {
+    width: 100%;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header__logo {
+    width: 35%;
+    padding: 2em 0 2em 0;
+}
+
+.main {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.span {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.psa {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    word-spacing: 0.125em;
+    line-height: 1.5;
+    font-size: .85rem;
+    padding-bottom: 1.75em;
+}
+
+.desktop-hero {
+    display: none;
+}
+
+.desktop-header {
+    display: none;
+}
+
+form {
+    display: flex;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 25px;
+    max-width: 380px;
+}
+
+.error-form {
+    border: 1px solid red;
+}
+
+#email {
+    margin: 0 auto;
+    width: 75%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: hsl(0, 100%, 98%);
+    border-radius: 25px;
+    color: hsl(0, 36%, 70%);
+    padding-left: 1.25em;
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+::placeholder:focus {
+    color: hsl(0, 6%, 24%);
+}
+
+input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+      }
+
+
+.error-icon-wrap {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.error-icon-wrap2 {
+    visibility: visible;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.svg-arrow {
+    padding: 0.75em 1.75em;
+    background-image: linear-gradient(180deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 25px;
+    height: 100%;
+}
+
+.svg-arrow:active{
+    opacity: .75;
+}
+
+#alert {
+    color: red;
+    padding-top: 1em;
+}
+
+
+@media (min-width: 500px) {
+    form {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 700px) {
+    .background-image {
+        min-height: 600px;
+    }
+
+    #alert {
+        padding: 1em;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .mobile-hero {
+        display: none;
+    }
+
+    .d-flex {
+        display: flex;
+        height: 100vh;
+    }
+
+    .desktop-hero {
+        display: inline;
+        background-image: url("../images/hero-desktop.jpg");
+        background-size: cover;
+        width: 40%;
+    }
+
+    .main {
+        text-align: left;
+        padding: 2em;
+        width: 60%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .desktop-header {
+        display: inline;
+    }
+
+    .header__logo {
+        padding-top: 2em;
+        padding-bottom: 30%;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .psa {
+        width: 87%;
+        font-size: 1rem;
+    }
+    
+    form {
+        margin: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .container {
+        width: 60%;
+    }
+    .svg-arrow {
+        padding: 1em 2.5em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .svg-arrow:hover {
+        opacity: .75;
+    }
+
+    .svg-arrow:active {
+        opacity: 1;
+    }
+}
